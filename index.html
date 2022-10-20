@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&family=Open+Sans:ital@1&family=PT+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* fonts */
+
+        .font1{
+            font-family: 'Dancing Script', cursive;
+            font-size: 50px;
+        }
+
+        .font2{
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .font3,h3,h4{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .font4,p,.support h3,.Layer div h4,.action div h3{
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        /*  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+        body{
+            text-align: center;
+
+        }
+
+        hr{
+           border-top: 2px solid lightgray;
+        }
+
+        .wrapper{
+            max-width:600px;
+            background-color:#eeeeef;
+            margin: 0 auto;
+        }
+
+        .background{
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(images/pexels-pixabay-163703.jpg);
+        }
+
+        header h2{
+            padding: 20px;
+            color: #fff;
+        }
+        header ul{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        header ul li{
+            padding: 0 15px;
+        }
+        
+        .herosection{
+            padding: 50px;
+            color: #f5f5f5;
+            
+        }
+
+        .herosection h1{
+            padding:20px;
+            font-size: 40px;
+        }
+        .herosection p{
+            padding: 20px 0 30px 0;
+            margin: 0 0 20px 0;
+            font-size: 14px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .btn{
+            padding: 7px 14px;
+            background-color: rgb(79, 195, 175);
+            color: #fff;
+            border-radius: 20px ;
+            display: inline-block;
+            margin: 0 0 30px 0;
+            
+        }
+        .people{
+            display: flex;
+            padding:30px 5px;
+            width: 85%;
+            margin: 0 auto;
+        }
+        .people hr{
+            width: 75%;
+            margin: 20px auto;
+        }
+        .people  div{
+            padding: 10px;
+        }
+
+       .people img{
+        width: 30px;
+        padding: 20px;
+       }
+
+       .feature {
+        display: flex;
+        align-items: baseline;
+        background: #f5f5f5;
+        text-align: left;
+        
+    
+       }
+       .feature .btn{
+        margin: 0px 0 20px 0;
+       }
+
+       .feature img{
+        width: 90%;
+        margin: 0 auto;
+       }
+       .feature p{
+        padding: 20px 0 30px 0 ;
+       }
+
+       .feature div{
+       flex-basis: 40%;
+       padding: 20px;
+       margin: 0 auto;
+       }
+
+       .feature div h3{
+        padding: 10px  0 0 0;
+       }
+       .support{
+        text-align: left;
+        padding: 20px;
+        margin: 30px auto;
+        width: 80%;
+
+       }
+       
+       .support p{
+        padding: 20px 0;
+       }
+       .support h3{
+        margin: 10px 0 0 0px;
+       }
+
+       .support hr{
+        margin: 20px 0;
+       }
+       
+
+       .support .float{
+        float: left;
+        margin: 0;
+       }
+       .btn1{
+        padding: 7px 14px;
+        background-color:lightgray;
+        color: #fff;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 20px;
+       }
+       .Layer{
+        display: flex;
+        padding: 30px;
+       justify-content: center;
+        text-align: left;
+        background-color:#f5f5f5 ;
+        gap:20px
+       }
+       .Layer a{
+        color:#4fc3af;
+       }
+       
+      .Layer hr{
+        margin: 20px 0;
+      }
+
+      .Layer div a{
+        display: inline-block;
+        margin: 20px 0 0 10px;
+      }
+
+      .Layer div h4{
+        padding: 0 0 0 10px;
+      }
+
+      .Layer p{
+        padding: 0 0 0 10px;
+      }
+       
+        
+       .img2{
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+       }
+       .action{
+        display: flex;
+        padding: 30px 30px 0px 30px;
+        text-align: left;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+       }
+
+       .action hr{
+        width: 85%;
+        margin: 10px 0;
+       }
+       
+       .action p{
+        width: 80%;
+        margin:0 0 20px 0;
+       }
+       .action .float1{
+        float: left;
+       }
+       .action div h3{
+        margin: 20px 0 0 20px ;
+        padding-left: 35px;
+       }
+
+       .just{
+        display: flex;
+        background-color: #f5f5f5;
+        text-align: left;
+        padding: 30px;
+       }
+
+       .just img{
+        width: 200px;
+        padding: 10px;
+       }
+       .just h3{
+        font-size: 18px;
+        padding: 20px 0 30px 20px;
+       }
+       .just p{
+        padding: 30px 0 40px 20px;
+       }
+       .just .btn{
+        margin: 0 0 0 20px;
+       }
+       .just hr{
+        width: 90%;
+        margin: 0 auto;
+       }
+       
+       .featured{
+        padding: 20px;
+        background-color: #4fc3af;
+       }
+       .featured h4{
+        color: #fff;
+       }
+
+       .featured div{
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+        color: #cbede7;
+       }
+
+       footer{
+        text-align: left;
+        padding: 10px;
+        font-size: 14px;
+        color: lightslategray;
+       }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="background">
+            <header>
+                <h2 class="font1">Elena</h2>
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="#"><li>SERVICES</li></a>
+                    <a href="#"><li>FEATURE</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                </ul>
+            </header>
+            <div class="herosection">
+                <h1 class="font2" >HAVE A GOOD DAY</h1>
+                <p>JUST FOR YOU ON THE THEME FOREST</p>
+                <a class="btn" href="#">GET YOUR COPY NOW</a>
+            </div>
+        
+        </div>
+        <div class="people">
+            <div>
+                <img src="images/heart-regular (1).png" alt="">
+                <h3>PROFESSIONALS</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+            <div>
+                <img src="images/headphones-solid.png" alt="">
+                <h3>AMATEURS</h3>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+            <div>
+                <img src="images/heart-regular (1).png" alt="">
+                <h3>FOR EVERYONE</h3>
+                <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> 
+            </div>
+        </div>
+        <div class="feature">
+            <div>
+                <img src="https://images.pexels.com/photos/627678/pexels-photo-627678.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                <h3>Responsive Email Template</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, atque.</p>
+                <a class="btn" href="#">Read More</a>
+            </div>
+            <div>
+                <img src="https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h3>FULLY COMPATIBLE IMAGE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, placeat.</p>
+                <a class="btn" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="support">
+            <img class="float" src="images/elena-email-psd-theme (1).png" alt="">
+            <h3>FULLY SUPPORTED TEMPLATE</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aut, dicta nemo quo expedita qui voluptate reiciendis, voluptates ea dolore praesentium nam maiores soluta laboriosam.</p>
+            <a class="btn1" href="#">Read More</a>
+        </div>
+        <div class="Layer">
+            <div>
+                <img class="img2" src=https://images.pexels.com/photos/4148684/pexels-photo-4148684.jpeg?auto=compress&cs=tinysrgb&w=600 alt="">
+                <h4>FULLY LAYRED PSD</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#">check this out</a>
+            </div>
+            <div>
+                <img class="img2" src="https://images.pexels.com/photos/147430/pexels-photo-147430.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                <h4>FULLY COMPATIBLE</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#">check this out</a>
+            </div>
+
+            <div >
+                <img class="img2" src="https://images.pexels.com/photos/573315/pexels-photo-573315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h4>VERY GREAT MODULES</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#">check this out</a>
+            </div>
+          
+        </div>
+      
+        <div class="action">
+            <div>
+                <img class="float1" src="images/elena-email-psd-theme (2).png" alt="">
+                <h3>SEND IT NOW</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ipsam.</p>
+                <a class="btn" href="#">Read More</a>
+            </div>
+            <div>
+                <img class="float1" src="images/elena-email-psd-theme (3).png" alt="">
+                <h3>VERY NICE TO SEE</h3>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, veniam!</p>
+                <a class="btn" href="#">Read More</a>
+            </div>
+
+        </div>
+        <div class="just">
+            <div>
+                <img src="https://images.pexels.com/photos/3779187/pexels-photo-3779187.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            <div>
+                <h3>JUST FOR YOU ON THE THEMEFOREST</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sunt excepturi mollitia aspernatur dolores ratione asperiores illum? Corrupti, voluptates consectetur?</p>
+                <a class="btn" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="featured">
+            <h4>THIS TEMPLATE WAS FEATURED ON </h4>
+            <div>
+                <h3>TechCrunch</h3>
+                <h3>Promail</h3>
+                <h3>Mashable</h3>
+                <h3>atlaspix</h3>
+            </div>
+        </div>
+        <footer>
+            <p>Elena &copy; copyright 2013- unsuscribe here</p>
+        </footer>
+    </div>
+</body>
+</html>
